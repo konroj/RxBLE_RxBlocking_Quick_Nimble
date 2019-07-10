@@ -1,0 +1,48 @@
+PODS:
+  - Nimble (8.0.1)
+  - Quick (2.1.0)
+  - RxBlocking (5.0.0):
+    - RxSwift (~> 5)
+  - RxBluetoothKit (5.2.1):
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - RxBlocking
+  - RxBluetoothKit
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - RxBlocking
+    - RxBluetoothKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  RxBlocking: c67185d26498ea3cbe3e121917c3c16739e43123
+  RxBluetoothKit: 3a4ca066d4d6e87ec5cf77a81298830a9a833bf1
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: 3aa768c79d8e80e9061b41936170931a1a0a83db
+
+COCOAPODS: 1.7.1

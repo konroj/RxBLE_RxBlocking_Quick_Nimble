@@ -1,0 +1,6 @@
+framework module Pods_BloodPressureTests {
+  umbrella header "Pods-BloodPressureTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
