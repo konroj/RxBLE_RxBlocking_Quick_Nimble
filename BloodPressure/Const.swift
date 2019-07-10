@@ -16,4 +16,13 @@ struct Const {
         static let characteristic = CBUUID(string: "2A49")
     }
     
+    struct ConnectionState {
+        static let connected = "Connected"
+        static let disconnected = "Disconnected"
+        
+        static func state(from isOn: Bool) -> String {
+            return isOn ? connected : disconnected
+        }
+    }
+    
 }

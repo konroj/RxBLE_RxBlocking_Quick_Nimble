@@ -21,7 +21,7 @@ class BloodPressureListTableViewCell: UITableViewCell {
     }
     
     func setup(model: BloodPressure) {
-        textLabel?.text = "Value: \(model.value.decimalString) (\(model.value.hexString))"
+        textLabel?.text = "Value: \(model.value.decimalString) (\(model.value.hexString))" // use translation keys
         detailTextLabel?.text = model.date.fullDate
     }
     

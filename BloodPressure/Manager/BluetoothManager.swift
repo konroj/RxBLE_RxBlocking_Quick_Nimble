@@ -39,7 +39,7 @@ extension BluetoothManager {
             .flatMap { $0.peripheral.establishConnection() }
             .do(onNext: { [weak self] peripherial in
                 self?.peripheral = peripherial
-                self?.peripheralStatus.onNext((peripherial.name, peripherial.isConnected ? "Connected" : "Disconnected"))
+                self?.peripheralStatus.onNext((peripherial.name, Const.ConnectionState.state(from: peripherial.isConnected)))
             })
             .flatMap { $0.discoverServices([Const.CBUUIDs.service]) }
             .flatMap { Observable.from($0) }
@@ -72,7 +72,7 @@ extension BluetoothManager {
         centralManager.observeDisconnect(for: peripheral)
         .subscribe(onNext: { [weak self] (peripherial, reason) in
             guard let self = self else { return }
-            self.peripheralStatus.onNext((peripherial.name, peripherial.isConnected ? "Connected" : "Disconnected"))
+            self.peripheralStatus.onNext((peripherial.name, Const.ConnectionState.state(from: peripherial.isConnected)))
             // should handle disconnect
         }, onError: { (error) in
             // handle error
